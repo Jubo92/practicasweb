@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario de registro - Mi web</title>
+	<meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Formulario de registro</h1>
+    <form name="registro" action="" method="get">
+		<label>Nombre:  <input maxlength=50 name="nombre" type="text"></label><br><br>
+		<label>Apellidos:  <input maxlength=50 name="apellidos" type="text"></label><br><br>
+		Sexo:  <label><input type="radio" name="sexo" value="H">hombre</label>
+		<label><input type="radio" name="sexo" value="M">mujer</label><br><br>
+		<label>Correo:  <input name="correo" type="email"></label><br><br>
+		<label>Población:  <select name="poblacion">
+								<option value="AL" selected>Alicante</option>
+								<option value="MA">Madrid</option>
+								<option value="SE">Sevilla</option>
+								<option value="VA">Valencia</option>
+							</select>
+		</label><br><br>
+		<label>Descripción:  <textarea rows=8 cols=50></textarea></label><br><br>
+		<label><input type="checkbox" name="verificacion" value="verif1" checked>
+		Deseo recibir información sobre novedades y ofertas</label><br><br>
+		<label><input type="checkbox" name="verificacion" value="verif2">
+		Declaro haber leido y aceptar las condiciones generales del 
+		programa y la normativa sobre protección de datos</label><br><br>
+		<input type="submit" name="enviar" value="Enviar">
+	</form>
+  </body>
+</html>
