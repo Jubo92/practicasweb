@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" />
+		<meta name="author" content="isabel" />
+		<title>Untitled 2</title>
+		<script>
+			window.onload = function() {
+			info=document.getElementById("informacion");
+			mostrarh1=document.getElementsByTagName("h1");
+			info.innerHTML="estos son los h1 " + mostrarh1.length;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="informacion" style= "border:thin solid silver; padding:.5em"></div>
+		<h1>Ejemplo1</h1>
+		<p>Este es el primer párrafo del ejemplo, vamos a introducir <b>negrita</b> y <i>cursiva</i></p>
+		<h2>ejemplo 2</h2>
+		<p><small>Este <b>es</b> el segundo <b>párrafo</b> más pequeño</small> </p>
+		<h1>ejemplo 3</h1>
+		<p> Este es el tercer <b>párrafo</b> más grande</p>
+	</body>
+</html>
