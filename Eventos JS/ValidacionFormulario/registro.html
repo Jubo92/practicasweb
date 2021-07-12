@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Registro</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<meta charset="utf-8">
+	<script src="js/validaciones.js"></script>
+  </head>
+  <body>
+    <h1>Regístrate</h1>
+    <form name="registro" action="registro2.html" method="get" onsubmit="return validarRegistro();">
+		<label>Nombre de usuario <br> <input name="usuario" type="text"></label>
+		<label>Contraseña <br> <input minlength=6 name="pass" type="password"></label>
+		<label>Repite la contraseña <br> <input minlength=6 name="pass2" type="password"></label>
+		<label>Correo electrónico <br> <input name="email" type="email"></label>
+		<label>Fecha de nacimiento <br> <input name="nacimiento" type="date"></label><br>
+		<input type="submit" name="registro" value="Regístrate"><br><br>
+	</form>
+	<div id="errores" class="errores"></div>
+  </body>
+</html>

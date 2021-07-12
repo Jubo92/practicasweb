@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Login</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<meta charset="utf-8">
+	<script src="js/validaciones.js"></script>
+  </head>
+  <body>
+    <h1>Inicia sesión</h1>
+    <form name="login" action="login2.html" method="get" onsubmit="return validarLogin();">
+		<label>Nombre de usuario <br> <input name="usuario" type="text" required></label>
+		<label>Contraseña <br> <input minlength=6 name="pass" type="password" required></label><br>
+		<input type="submit" name="login" value="Inicia sesión"><br><br>
+		<p>¿No estás registrado? <a href="registro.html">Regístrate aquí</a></p><br>
+	</form>
+	<div id="errores" class="errores"></></div>
+  </body>
+</html>
